@@ -5,5 +5,50 @@
     <link>https://cadence.coursion.studio/appcast.xml</link>
     <description>Updates for Cadence, the calendar for work and life from Coursion.</description>
     <language>en</language>
-  </channel>
+  
+    <item>
+      <title>Version 1.2.0</title>
+      <pubDate>Sun, 15 Nov 2026 15:50:28 +0300</pubDate>
+      <sparkle:version>59</sparkle:version>
+      <sparkle:shortVersionString>1.2.0</sparkle:shortVersionString>
+      <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+      <description><![CDATA[<p>Cadence 1.2 brings a calmer menu bar panel, a redesigned iPhone app, and one Accounts list that answers Google and Outlook invitations.</p>
+<h5>A calmer menu bar</h5>
+<ul>
+<li><strong>One calm glance at your day</strong> — The panel shows one header, a Now and Next card and one-line rows. Right-click it to keep it open.</li>
+<li><strong>Event pages and the day overview</strong> — Click a meeting or the date to slide its details into the panel. Esc, Back or a swipe returns.</li>
+<li><strong>A clock that rolls each minute</strong> — The menu bar shows the next meeting and the time, and only the changing digit rolls. Turn it off in Settings → Appearance.</li>
+<li><strong>Look ahead to any day</strong> — Pick a day in the week strip to see it first under its own header. Press Today or Esc to come back.</li>
+</ul>
+<h5>Cadence on iPhone, rebuilt</h5>
+<ul>
+<li><strong>Today leads with what&#x27;s next</strong> — Your next meeting comes first, with a live countdown and Join. Each event shows once, with replies in place.</li>
+<li><strong>Calendar and Inbox, redesigned</strong> — Calendar opens on a week strip that grows into the month. Inbox groups invitations by day, names each clash, and takes swipe replies.</li>
+<li><strong>A welcome that gets access right</strong> — Five short steps ask for calendar access and notifications, and Cadence no longer says &quot;not granted&quot; after you allow.</li>
+</ul>
+<h5>All your accounts in one list</h5>
+<ul>
+<li><strong>Every account in one place</strong> — Settings → Accounts lists each account with its logo and status, with Set up replies, Reconnect and Remove.</li>
+<li><strong>More than one Google account</strong> — Add account always opens the full provider menu, so a second Google account, Outlook, iCloud or a CalDAV server is one step away.</li>
+</ul>
+<h5>Answer and edit in place</h5>
+<ul>
+<li><strong>Reply to Google invitations</strong> — Accept, Maybe or Decline goes through your own Google account. You have ten seconds to Undo.</li>
+<li><strong>Answer in Outlook on the web</strong> — Outlook and Microsoft 365 invitations offer a button that opens the day in Outlook on the web.</li>
+<li><strong>Edit events (⌘E)</strong> — Change a meeting in the edit sheet, drag to move or resize it, or ⌥-drag to duplicate. Delete has Undo.</li>
+</ul>
+<h5>Life beside your work</h5>
+<ul>
+<li><strong>Reminders in your day</strong> — Due reminders sit in the agenda, the panel and Today. Complete one with a click, and Undo it if you need to.</li>
+<li><strong>Birthdays, weather and countdowns</strong> — Each day shows its forecast and the birthdays from Contacts. Pin an event to count down to it.</li>
+</ul>
+<h5>Steadier every day</h5>
+<ul>
+<li><strong>Holidays show once</strong> — The same holiday listed by two calendars now appears once, in every view.</li>
+<li><strong>The panel keeps its corners</strong> — Going back from an event or the day overview no longer cuts off the panel&#x27;s rounded top and bottom.</li>
+<li><strong>Updates arrive on their own</strong> — Cadence from cadence.coursion.studio checks for a new version and offers to install it. Turn this off in Settings → General.</li>
+</ul>]]></description>
+      <enclosure url="https://github.com/Coursion-Studio/cadence-release/releases/download/v1.2.0/Cadence-1.2.0.dmg" type="application/octet-stream" sparkle:edSignature="KZCUQwo3tALJk04gG/bJV3uCbaFTQdmWiMT2zQMBQouqN6kA7X6sYFgAhS2G1lT1t+dUE+j7pJwNux6MiV2yBQ==" length="13224152" />
+    </item>
+</channel>
 </rss>
