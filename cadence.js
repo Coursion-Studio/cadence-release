@@ -318,6 +318,53 @@
     layout();
   });
 
+  $$(".brew[data-cmd]").forEach((btn) => {
+    const state = $(".brew-state", btn);
+    let t = 0;
+    btn.addEventListener("click", async () => {
+      try {
+        await navigator.clipboard.writeText(btn.dataset.cmd);
+        state.textContent = "Copied";
+        btn.classList.add("done");
+      } catch (_) {
+        const r = document.createRange();
+        r.selectNodeContents($("code", btn));
+        const sel = getSelection();
+        sel.removeAllRanges();
+        sel.addRange(r);
+        state.textContent = "Press ⌘C";
+      }
+      clearTimeout(t);
+      t = setTimeout(() => { state.textContent = "Copy"; btn.classList.remove("done"); }, 1800);
+    });
+  });
+
+  $$(".hd").forEach((desk) => {
+    const left = $('[data-roll="left"]', desk);
+    const min = $('[data-roll="min"]', desk);
+    if (!left || !min) return;
+    const roll = (el, text) => {
+      const old = el.lastElementChild;
+      if (old && old.textContent === text) return;
+      const next = document.createElement("span");
+      next.textContent = text;
+      next.className = "in";
+      el.appendChild(next);
+      if (old) { old.className = "out"; setTimeout(() => old.remove(), 360); }
+    };
+    let step = 0, timer = 0;
+    const tick = () => {
+      step = (step + 1) % 4;
+      roll(min, String(step));
+      roll(left, String(20 - step));
+    };
+    const start = () => { if (!timer && !calm() && !document.hidden) timer = setInterval(tick, 3200); };
+    const stop = () => { clearInterval(timer); timer = 0; };
+    document.addEventListener("visibilitychange", () => (document.hidden ? stop() : start()));
+    still.addEventListener("change", () => (calm() ? stop() : start()));
+    start();
+  });
+
   $$(".copy[data-copy]").forEach((btn) => {
     btn.addEventListener("click", async () => {
       const pre = document.getElementById(btn.dataset.copy);
