@@ -1,0 +1,9 @@
+<?xml version="1.0" standalone="yes"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle">
+  <channel>
+    <title>Cadence</title>
+    <link>https://cadence.coursion.studio/appcast.xml</link>
+    <description>Updates for Cadence, the calendar for work and life from Coursion.</description>
+    <language>en</language>
+  </channel>
+</rss>

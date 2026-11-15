@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Privacy Policy — Cadence</title>
+  <meta name="description" content="What Cadence accesses, why, and where it goes: on your device, to your own calendar provider, and nowhere else." />
+  <link rel="canonical" href="https://cadence.coursion.studio/privacy.html" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="apple-touch-icon" href="icon-256.png" />
+  <link rel="stylesheet" href="stage.css?v=1d5ceac846" />
+  <link rel="stylesheet" href="cadence.css?v=c683698096" />
+  <meta name="theme-color" content="#0B0A0C" />
+  <script>document.documentElement.classList.add("js");window.__rv=setTimeout(function(){document.documentElement.classList.add("reveal-all")},4000);</script>
+  <script defer src="palettes.js?v=23e8e6f854"></script>
+  <script>window.STAGE = { palette: "cadence" };</script>
+  <script defer src="stage.js?v=bda7026e0e"></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="legal-wrap">
+    <div class="mesh" aria-hidden="true"><i class="m1"></i><i class="m2"></i><i class="m3"></i><i class="m4"></i></div>
+    <div class="container">
+      <nav class="top" aria-label="Main">
+        <a class="brand" href="./"><img src="icon-256.png" alt="" width="26" height="26" /><span>Cadence</span></a>
+        <div class="links">
+          <a href="./#inbox">Tour</a>
+          <a href="./#features">Features</a>
+          <a href="support.html">Support</a>
+          <a class="keep" href="./#download">Download</a>
+        </div>
+      </nav>
+
+      <main id="main" class="legal">
+        <div class="legal-head">
+          <p class="eyebrow">Legal · Privacy</p>
+          <h1>Privacy Policy</h1>
+          <span class="updated">Last updated 16 October 2026</span>
+          <p class="lede">Cadence is a calendar app for Mac and iPhone made by Coursion Studio. It reads the calendars already on your device and, when you answer an invitation, sends that reply straight from your device to Google, Microsoft or iCloud. There is no Coursion server, no Cadence account, no analytics and no advertising. This page lists everything Cadence touches and why.</p>
+        </div>
+
+        <nav class="legal-toc" aria-label="On this page">
+          <h2>On this page</h2>
+          <ol>
+            <li><a href="#calendars">Calendars on your device</a></li>
+            <li><a href="#google">Google Calendar</a></li>
+            <li><a href="#microsoft">Microsoft 365 and Outlook</a></li>
+            <li><a href="#icloud">iCloud Calendar</a></li>
+            <li><a href="#storage">Where data is kept</a></li>
+            <li><a href="#icloud-sync">Settings sync through iCloud</a></li>
+            <li><a href="#agents">Agents, the command line and Shortcuts</a></li>
+            <li><a href="#none">What Cadence never does</a></li>
+            <li><a href="#limited-use">Google API Limited Use</a></li>
+            <li><a href="#app-store">The App Store</a></li>
+            <li><a href="#website">This website</a></li>
+            <li><a href="#control">Revoking access and deleting data</a></li>
+            <li><a href="#children">Children</a></li>
+            <li><a href="#changes">Changes and contact</a></li>
+          </ol>
+        </nav>
+
+        <div class="legal-copy">
+          <section>
+            <h2 id="calendars">Calendars on your device</h2>
+            <p>With your permission (Calendars, full access), Cadence reads events through Apple’s EventKit framework: titles, times, time zones, locations, notes, links, the calendar and account each event belongs to, the organiser, the attendees and their responses. That is the same data Apple Calendar shows for the accounts you have added to your Mac or iPhone.</p>
+            <p>Cadence uses it to draw your agenda, day, week and month views, list invitations that need a reply, detect double-bookings, find join links, schedule reminders and the daily brief, and fill its widgets and Live Activity. When you use quick add, Cadence creates the event through EventKit in the calendar you chose; when you share availability, the free times are copied to your clipboard and go only where you paste them. All of this processing happens on your device. Event titles, attendee addresses and notes are never written to logs and never sent to Coursion Studio.</p>
+          </section>
+
+          <section>
+            <h2 id="google">Google Calendar</h2>
+            <p>Linking a Google account is optional and only needed to answer Google invitations from inside Cadence. You sign in on Google’s own page; Cadence receives an OAuth token and requests one scope:</p>
+            <table>
+              <tr><th>Scope</th><th>What Cadence does with it</th></tr>
+              <tr><td><code>https://www.googleapis.com/auth/calendar.events</code></td><td>When you press Accept, Maybe or Decline, Cadence looks up that one event in your primary calendar by its iCalendar UID and updates <em>your own</em> response status, with the note you typed if any. It does not create, move or delete events, and it does not change anyone else’s response.</td></tr>
+            </table>
+            <p>Find a time reads when the people you choose are free or busy, and nothing else (no titles, attendees or notes), to suggest meeting times. Cadence sends the email addresses you choose to Google's free/busy endpoint (scope <code>calendar.freebusy</code>, asked for the first time you use it) or Microsoft Graph's schedule endpoint, directly from your device. Nothing goes through a Coursion server.</p>
+            <p>If you turn on leave-by alerts, Cadence asks for your location while it is open and uses Apple Maps on your device to estimate travel time to meetings with a place. Your location is not stored or sent anywhere else.</p>
+            <p>If you turn on weather, Cadence uses your approximate location with Apple WeatherKit to show the forecast on each day. Apple receives the location to answer the request; Cadence does not store it.</p>
+            <p>If you turn on reminders, Cadence reads and completes reminders through Apple’s EventKit framework on your device. Nothing about them leaves your device.</p>
+            <p>If you add an Exchange account, Cadence sends your username and password only to the Exchange server you entered, over https, to send your replies. The password is stored in the Keychain.</p>
+            <p>If you add a CalDAV account (Fastmail, Nextcloud, Zoho, Synology, mailbox.org or any other CalDAV server), Cadence sends your username and app password only to the server you entered, over https, to find your calendars and send your replies. The password is stored in the Keychain and never leaves your device otherwise. Cadence looks up your email domain's public DNS records to find the server. Nothing goes through a Coursion server.</p>
+            <p>Cadence also asks for your Google account's email address (scope <code>userinfo.email</code>) so it can show which account is linked and match invitations to it. The address stays on your device.</p>
+            <p>Requests go directly from your device to <code>www.googleapis.com</code>. The data Google returns is used for that reply and then discarded; Cadence keeps no copy of it.</p>
+          </section>
+
+          <section>
+            <h2 id="microsoft">Microsoft 365 and Outlook</h2>
+            <p>Linking a Microsoft account is optional. You sign in on Microsoft’s page and Cadence requests:</p>
+            <table>
+              <tr><th>Permission</th><th>What Cadence does with it</th></tr>
+              <tr><td><code>Calendars.ReadWrite</code></td><td>Find the event you are answering by its iCalendar UID and send your accept, tentative or decline response, with your note if any, through Microsoft Graph.</td></tr>
+              <tr><td><code>offline_access</code></td><td>Keep you signed in, so you are not asked to sign in again every hour.</td></tr>
+            </table>
+            <p>Requests go directly from your device to <code>graph.microsoft.com</code>. If your organisation requires an administrator to approve apps, Cadence shows you the message to pass on; nothing is sent anywhere else.</p>
+          </section>
+
+          <section>
+            <h2 id="icloud">iCloud Calendar</h2>
+            <p>To answer iCloud invitations, you give Cadence your Apple Account email and an app-specific password that you create at Apple. Cadence connects to <code>caldav.icloud.com</code>, fetches the one event you are answering by its UID, changes your attendance on it and writes it back. iCloud then notifies the organiser. You can revoke the password at any time at Apple without affecting anything else.</p>
+          </section>
+
+          <section>
+            <h2 id="storage">Where data is kept</h2>
+            <ul>
+              <li><strong>Tokens and passwords</strong> — Google and Microsoft OAuth tokens and your iCloud app-specific password are stored only in your device’s Keychain under the service <code>com.coursion.cadence</code>. They are never logged, never displayed, and only ever sent to the provider they belong to.</li>
+              <li><strong>Calendar data</strong> — stays in the system calendar database where it already lives. To feed widgets, Cadence writes a small summary of upcoming meetings into its own app group container on the same device.</li>
+              <li><strong>Pending replies</strong> — after you answer, Cadence remembers the answer locally until your calendar confirms it, so it can show “sent”, offer Undo or retry.</li>
+              <li><strong>Notifications</strong> — join reminders and the daily brief are scheduled locally by the system; they do not pass through any server of ours.</li>
+            </ul>
+          </section>
+
+          <section>
+            <h2 id="icloud-sync">Settings sync through iCloud</h2>
+            <p>If you are signed in to iCloud, Cadence keeps your settings in step between your Mac and iPhone through your own <strong>iCloud private database</strong>: calendar sets, time zones, hidden calendars, the active set, working hours, week start, default view, notification hours and which calendar account is answered by which provider. Apple stores this in your iCloud account; Coursion Studio cannot read it. Events, tokens and passwords are never synced this way.</p>
+          </section>
+
+          <section>
+            <h2 id="agents">Agents, the command line and Shortcuts</h2>
+            <p>The Mac app can run a local server for AI agents (the Model Context Protocol) and for the <code>cadence</code> command line. It listens on <code>127.0.0.1</code> only, so nothing outside your Mac can reach it, and every request needs a token kept in your Keychain. Agents can read your schedule; replying on your behalf stays off until you turn it on in Settings → Agents. Shortcuts, Siri and the Focus filter use Apple’s App Intents on your device. Automations that run a Shortcut when a meeting starts or ends are off until you turn them on, and pass the Shortcut the event’s identifier only.</p>
+            <p>When you connect an agent of your choosing, what it does with the answers Cadence gives it is governed by that agent’s own terms. Cadence does not send your data to any AI service itself.</p>
+          </section>
+
+          <section>
+            <h2 id="none">What Cadence never does</h2>
+            <ul>
+              <li>No Coursion server: none of your calendar data, tokens or replies passes through us.</li>
+              <li>No analytics, tracking or advertising SDKs, and no profile of you.</li>
+              <li>No sale, rental or sharing of your data with anyone.</li>
+              <li>No use of your calendar data to train AI models.</li>
+              <li>No access to your contacts, mail or files.</li>
+            </ul>
+            <p>If you have chosen to share crash reports with app developers in your device’s settings, Apple may pass anonymous crash reports for Cadence to us. You control that in System Settings or Settings on iPhone, under Privacy &amp; Security → Analytics &amp; Improvements.</p>
+          </section>
+
+          <section>
+            <h2 id="limited-use">Google API Limited Use</h2>
+            <p>Cadence’s use and transfer to any other app of information received from Google APIs will adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited Use requirements. Google user data is used only to provide the reply feature you asked for, is processed on your device, is not transferred to Coursion Studio or any third party, is not used for advertising, and is not read by any person.</p>
+          </section>
+
+          <section>
+            <h2 id="app-store">The App Store</h2>
+            <p>Cadence is free and is distributed through the Mac App Store and the App Store. We receive no personal information about you from Apple, only the anonymous download reports Apple gives every developer.</p>
+          </section>
+
+          <section>
+            <h2 id="website">This website</h2>
+            <p>cadence.coursion.studio is a static site with no cookies, no analytics and no third-party scripts. Our web host may keep standard access logs, such as IP address and the page requested, for security and reliability; we do not use them to identify you.</p>
+          </section>
+
+          <section>
+            <h2 id="control">Revoking access and deleting data</h2>
+            <ul>
+              <li>Unlink an account in Cadence under Settings → Accounts. Its token or password is deleted from your Keychain at once.</li>
+              <li>You can also revoke access at the provider: your Google Account’s <a href="https://myaccount.google.com/permissions">third-party access</a> page, Microsoft’s <a href="https://account.live.com/consent/Manage">app permissions</a> page (or your organisation’s My Apps portal), or the app-specific passwords section of your <a href="https://account.apple.com">Apple Account</a>.</li>
+              <li>Withdraw calendar access in System Settings or Settings on iPhone, under Privacy &amp; Security → Calendars.</li>
+              <li>Deleting Cadence removes its local data. Settings synced to iCloud can be removed under your Apple Account’s iCloud storage settings.</li>
+            </ul>
+            <p>Because we hold no personal data about you, there is nothing on our side to export or delete; if you think otherwise, write to us and we will check.</p>
+          </section>
+
+          <section>
+            <h2 id="children">Children</h2>
+            <p>Cadence is a general-purpose tool and is not directed at children under 13. We do not knowingly collect information from children.</p>
+          </section>
+
+          <section>
+            <h2 id="changes">Changes and contact</h2>
+            <p>If Cadence starts handling data differently, this page will change first and the date at the top will move.</p>
+            <p>Coursion Studio is responsible for Cadence. Questions about privacy, or any request about your data: <a href="mailto:privacy@coursion.studio">privacy@coursion.studio</a>.</p>
+          </section>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <div class="container">
+    <footer>
+      <div class="links">
+        <a href="./">Home</a>
+        <a href="support.html">Support</a>
+        <a href="privacy.html" aria-current="page">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="mailto:privacy@coursion.studio">privacy@coursion.studio</a>
+      </div>
+      <div>© 2026 Coursion Studio</div>
+    </footer>
+  </div>
+</body>
+</html>

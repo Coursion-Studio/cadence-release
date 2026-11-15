@@ -1,0 +1,497 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cadence — Answer the invite. Plan the day. Keep life in view.</title>
+  <meta name="description" content="A free, native calendar for Mac and iPhone, for work and for the rest of life. Answer invitations in place, see reminders, weather and birthdays beside your events, and join every meeting on time." />
+  <link rel="canonical" href="https://cadence.coursion.studio/" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="apple-touch-icon" href="icon-256.png" />
+  <link rel="stylesheet" href="stage.css?v=1d5ceac846" />
+  <link rel="stylesheet" href="cadence.css?v=c683698096" />
+  <link rel="preload" as="image" href="icon-256.png" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://cadence.coursion.studio/" />
+  <meta property="og:title" content="Cadence — Answer the invite. Plan the day. Keep life in view." />
+  <meta property="og:description" content="Answer invitations in place, plan with reminders, weather, birthdays and countdowns, drag to reschedule, and join from the menu bar. Free and native on macOS 26 and iOS 26." />
+  <meta property="og:image" content="https://cadence.coursion.studio/shots/og.png?v=b6ed1aa1eb" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#0B0A0C" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Cadence",
+    "url": "https://cadence.coursion.studio/",
+    "image": "https://cadence.coursion.studio/icon.png",
+    "screenshot": "https://cadence.coursion.studio/shots/og.png",
+    "applicationCategory": "ProductivityApplication",
+    "operatingSystem": "macOS 26, iOS 26",
+    "description": "A free, native calendar for Mac and iPhone, for work and personal life. It answers invitations in place, shows reminders, weather and birthdays beside your events, and never lets a meeting be missed.",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    "publisher": { "@type": "Organization", "name": "Coursion Studio" }
+  }
+  </script>
+  <script>document.documentElement.classList.add("js");window.__rv=setTimeout(function(){document.documentElement.classList.add("reveal-all")},4000);</script>
+  <script defer src="palettes.js?v=23e8e6f854"></script>
+  <script>
+    window.STAGE = { palette: "cadence" };
+  </script>
+  <script defer src="stage.js?v=bda7026e0e"></script>
+  <script defer src="cadence.js?v=8c75a3ccc0"></script>
+</head>
+<body>
+  <a class="skip" href="#features">Skip to the features</a>
+
+  <header class="stage-hero reveal" data-live>
+    <div class="mesh" aria-hidden="true"><i class="m1"></i><i class="m2"></i><i class="m3"></i><i class="m4"></i></div>
+    <div class="container">
+      <nav class="top" aria-label="Main">
+        <a class="brand" href="./"><img src="icon-256.png" alt="" width="26" height="26" /><span>Cadence</span></a>
+        <div class="links">
+          <a href="#tour">Tour</a>
+          <a href="#features">Features</a>
+          <a href="#why">Why Cadence</a>
+          <a href="support.html">Support</a>
+          <a class="keep" href="#download">Download</a>
+        </div>
+      </nav>
+
+      <div class="fan" role="img" aria-label="The Cadence icon with its features fanned out beneath it: invitations, join, conflicts, quick add, zones and agents.">
+        <img class="fan-icon" src="icon-256.png" alt="" width="160" height="160" fetchpriority="high" />
+        <span class="fan-item"><span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 13.5 5.4 5.6h13.2L21 13.5V19H3z"/><path d="M3 13.5h5a4 4 0 0 0 8 0h5"/></svg></span><b>Invitations</b></span>
+        <span class="fan-item"><span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="6.5" width="12" height="11" rx="2.5"/><path d="m15 10.5 6-3.5v10l-6-3.5"/></svg></span><b>Join</b></span>
+        <span class="fan-item"><span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="11" height="9" rx="2"/><rect x="10" y="11" width="11" height="9" rx="2"/></svg></span><b>Conflicts</b></span>
+        <span class="fan-item"><span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="15" rx="2.5"/><path d="M3 10h18M8 3v4M16 3v4M12 13v4M10 15h4"/></svg></span><b>Quick add</b></span>
+        <span class="fan-item"><span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8.5"/><path d="M3.5 12h17M12 3.5c2.6 2.4 3.8 5.2 3.8 8.5s-1.2 6.1-3.8 8.5c-2.6-2.4-3.8-5.2-3.8-8.5S9.4 5.9 12 3.5z"/></svg></span><b>Zones</b></span>
+        <span class="fan-item"><span class="tile"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="15" rx="2.5"/><path d="m7 10 3 2.5L7 15M12.5 15.5H17"/></svg></span><b>Agents</b></span>
+      </div>
+
+      <div class="hero-copy">
+        <p class="eyebrow-mono rise">Calendar for work and life · Mac and iPhone · Free</p>
+        <h1 class="rise" style="--d:.08s">Answer the invite. Plan the day.<br /> Keep life in view.</h1>
+        <p class="sub rise" style="--d:.14s">A native calendar for Mac and iPhone. Reply to invitations where you see them, keep reminders, weather and birthdays beside your events, and join on time from the menu bar.</p>
+        <div class="cta-row rise" style="--d:.2s">
+          <a class="btn primary store" href="#download" aria-disabled="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="12" rx="2"/><path d="M8.5 20h7M12 16.5V20"/></svg>Mac App Store<span class="soon">Coming soon</span></a>
+          <a class="btn outline store" href="#download" aria-disabled="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg>App Store<span class="soon">Coming soon</span></a>
+        </div>
+        <p class="req-note rise" style="--d:.24s">macOS 26 and iOS 26 · Free, with no account · <a href="#tour">Take the tour</a></p>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="tour" class="tour reveal" aria-label="Cadence on the Mac and iPhone">
+      <div class="container">
+        <figure class="composite rise">
+          <img class="cp-base" src="shots/agenda.webp?v=cd857073a3" width="1600" height="1000" alt="Cadence’s main window on the Mac in agenda view for Tuesday, October 27: a Needs reply strip of five invitations across the top, then reminders and the day’s meetings with Reply and Join buttons." />
+          <img class="cp-panel" src="shots/panel.webp?v=827a3cb836" width="680" height="1303" alt="The menu bar panel: a week strip with today highlighted, a one-line summary with weather and a birthday, and today’s events, with Accept, Maybe and Decline buttons under Roadmap sync." />
+          <span class="cp-phone"><img src="shots/iphone-inbox.webp?v=ce338b55f8" width="400" height="870" alt="Cadence’s Today screen on iPhone: the next meeting, Design review, starting in 20 minutes, reminders, two invitations that need a reply, and the rest of the day." /></span>
+        </figure>
+        <ul class="facts">
+          <li class="rise" style="--d:.06s"><span class="fact-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 13.5 5.4 5.6h13.2L21 13.5V19H3z"/><path d="M3 13.5h5a4 4 0 0 0 8 0h5"/></svg></span><strong><b>10+</b> providers</strong><em>Google, Microsoft, iCloud, CalDAV and more</em></li>
+          <li class="rise" style="--d:.1s"><span class="fact-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="6.5" width="12" height="11" rx="2.5"/><path d="m15 10.5 6-3.5v10l-6-3.5"/></svg></span><strong><b>1</b> click to join</strong><em>or tap the hotkey twice</em></li>
+          <li class="rise" style="--d:.14s"><span class="fact-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7.5 3v5.2c0 4.5-3.1 8.6-7.5 9.8-4.4-1.2-7.5-5.3-7.5-9.8V6z"/><path d="M9.2 12.2l2 2 3.6-3.9"/></svg></span><strong><b>0</b> servers</strong><em>replies go straight to your provider</em></li>
+          <li class="rise" style="--d:.18s"><span class="fact-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="12" rx="2"/><path d="M8.5 20h7M12 16.5V20"/></svg></span><strong>Free</strong><em>on Mac and iPhone, no account</em></li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="container">
+      <section id="features" class="intro">
+        <p class="section-label">See it in action</p>
+        <h2>Everything a day asks of you.</h2>
+        <p class="lede">Meetings, errands and birthdays on one calendar. The panels below are live. Click them or press the keys, and they answer the way Cadence does.</p>
+        <ol class="index-table">
+          <li><a href="#inbox"><span class="ix-n">01</span><span class="ix-name">Invitations</span><span class="ix-what">Accept, Maybe or Decline in place, with undo on every reply</span><span class="ix-key">A M D</span></a></li>
+          <li><a href="#join"><span class="ix-n">02</span><span class="ix-name">Join</span><span class="ix-what">A countdown in the menu bar and Join in one click</span><span class="ix-key">⌃⌥F ×2</span></a></li>
+          <li><a href="#prep"><span class="ix-n">03</span><span class="ix-name">Pre-meeting card</span><span class="ix-what">Who is coming and the agenda, five minutes before</span><span class="ix-key">↩ joins</span></a></li>
+          <li><a href="#conflicts"><span class="ix-n">04</span><span class="ix-name">Conflicts</span><span class="ix-what">Double-bookings side by side, with Decline on each</span><span class="ix-key">D</span></a></li>
+          <li><a href="#quickadd"><span class="ix-n">05</span><span class="ix-name">Quick add</span><span class="ix-what">Type a meeting in plain words and press Return</span><span class="ix-key">⌘N</span></a></li>
+          <li><a href="#availability"><span class="ix-n">06</span><span class="ix-name">Share availability</span><span class="ix-what">Drag across free time and copy it in any zone</span><span class="ix-key">⌘⇧A</span></a></li>
+          <li><a href="#zones"><span class="ix-n">07</span><span class="ix-name">Time zones</span><span class="ix-what">Extra zones down the hour rail, half hours included</span><span class="ix-key">↑ ↓</span></a></li>
+          <li><a href="#agents"><span class="ix-n">08</span><span class="ix-name">Agents and Shortcuts</span><span class="ix-what">An MCP server, a command line, Siri and a Focus filter</span><span class="ix-key">cadence</span></a></li>
+          <li><a href="#widgets"><span class="ix-n">09</span><span class="ix-name">Widgets</span><span class="ix-what">Desktop, Lock Screen and Join in the Dynamic Island</span><span class="ix-key">Live Activity</span></a></li>
+          <li><a href="#life"><span class="ix-n">10</span><span class="ix-name">Reminders</span><span class="ix-what">Apple Reminders beside your events, ticked off in place</span><span class="ix-key">Tasks</span></a></li>
+          <li><a href="#life"><span class="ix-n">11</span><span class="ix-name">Weather and birthdays</span><span class="ix-what">The forecast on each day, and the people to remember</span><span class="ix-key">Day</span></a></li>
+          <li><a href="#life"><span class="ix-n">12</span><span class="ix-name">Countdowns</span><span class="ix-what">Days to a trip, a launch or a birthday</span><span class="ix-key">Days</span></a></li>
+          <li><a href="#life"><span class="ix-n">13</span><span class="ix-name">Editing</span><span class="ix-what">Drag to reschedule, and edit every field of an event</span><span class="ix-key">Drag</span></a></li>
+          <li><a href="#accounts"><span class="ix-n">14</span><span class="ix-name">Your accounts</span><span class="ix-what">Google, Microsoft 365, iCloud, Fastmail, Nextcloud and more</span><span class="ix-key">CalDAV</span></a></li>
+        </ol>
+      </section>
+    </div>
+
+    <section id="inbox" class="sec reveal" data-stage="inbox" aria-labelledby="inbox-title">
+      <div class="glow" aria-hidden="true"></div>
+      <div class="container">
+        <div class="ibx rise" role="group" aria-label="A demo invitation inbox">
+          <div class="ibx-head">
+            <span class="ibx-label">Needs reply</span>
+            <span class="ibx-count" aria-live="polite">3</span>
+            <span class="ibx-keys" aria-hidden="true"><kbd>A</kbd><kbd>M</kbd><kbd>D</kbd></span>
+          </div>
+          <ul class="ibx-list" role="listbox" aria-label="Invitations"></ul>
+          <div class="ibx-done">
+            <p>All answered. Your organisers already know.</p>
+            <button type="button" class="ibx-reset">Bring them back</button>
+          </div>
+        </div>
+        <div class="sec-head center">
+          <p class="spec rise"><span>01</span>Invitations</p>
+          <h2 id="inbox-title" class="rise" style="--d:.08s">Answer it where you see it</h2>
+          <p class="rise" style="--d:.14s">Accept, Maybe or Decline goes out through your own account, and the next calendar refresh confirms it. Every reply waits ten seconds, so Undo always takes it back.</p>
+          <p class="hint rise" style="--d:.2s">Click a reply, or press <span class="combo"><kbd>A</kbd> <kbd>M</kbd> <kbd>D</kbd></span>. <span class="combo"><kbd>↑</kbd> <kbd>↓</kbd></span> pick the row.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="join" class="sec sec-split reveal" data-stage="menubar" aria-labelledby="join-title">
+      <div class="glow" aria-hidden="true"></div>
+      <div class="container split">
+        <div class="split-copy">
+          <p class="spec rise"><span>02</span>Join</p>
+          <h2 id="join-title" class="rise">Never miss the start</h2>
+          <p class="rise" style="--d:.06s">The menu bar counts down to your next meeting. Join is one click, a double-click on the countdown, or the panel hotkey tapped twice from anywhere. On a meeting in any view, a double-click joins too.</p>
+          <ul class="keylist rise" style="--d:.1s">
+            <li><span class="combo"><kbd>⌃</kbd><kbd>⌥</kbd><kbd>F</kbd></span>Open the panel</li>
+            <li><span class="combo"><kbd>⌃</kbd><kbd>⌥</kbd><kbd>F</kbd> twice</span>Join the meeting</li>
+            <li><span class="combo"><kbd>J</kbd></span>Join from the window</li>
+          </ul>
+        </div>
+        <div class="split-stage">
+          <div class="mb-stage rise" style="--d:.08s">
+            <div class="mb-bar">
+              <i style="width:22px"></i><i style="width:30px"></i><i style="width:26px"></i>
+              <span class="sp"></span>
+              <button type="button" class="mb-item" aria-expanded="true" aria-controls="mb-panel"><span class="mb-dot" aria-hidden="true"></span><span class="mb-title">Standup in 2m</span></button>
+              <i style="width:18px"></i><i style="width:38px"></i>
+            </div>
+            <div id="mb-panel" class="mb-panel open">
+              <div class="mb-hero">
+                <span class="mb-when">In 2 minutes · 09:30–09:45</span>
+                <b class="mb-name">Standup</b>
+                <span class="mb-meta">Google Meet · 6 of 8 going</span>
+                <button type="button" class="mb-join">Join<kbd>↩</kbd></button>
+              </div>
+              <ul class="mb-next">
+                <li><span class="t">11:00</span><span class="n">Sync with Bengaluru</span><span class="s">Teams</span></li>
+                <li><span class="t">14:00</span><span class="n">Design review</span><span class="s">Zoom</span></li>
+              </ul>
+              <div class="mb-inbox"><span class="dot" aria-hidden="true"></span>2 invitations need a reply</div>
+              <div class="mb-foot"><span>Open Cadence</span><span>Today</span><span>Settings</span></div>
+            </div>
+            <p class="mb-toast" aria-live="polite"></p>
+          </div>
+          <p class="stage-status rise" style="--d:.14s">Click the countdown, or press <span class="combo"><kbd>⌃</kbd><kbd>⌥</kbd><kbd>F</kbd></span>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="prep" class="sec sec-split reveal" aria-labelledby="prep-title">
+      <div class="glow" aria-hidden="true"></div>
+      <div class="container split reverse">
+        <div class="split-copy">
+          <p class="spec rise"><span>03</span>Pre-meeting card</p>
+          <h2 id="prep-title" class="rise">Walk in knowing the room</h2>
+          <p class="rise" style="--d:.06s">Five minutes before a meeting with people or a link, the menu bar panel leads with Join, who is coming and the agenda from the notes. It can open itself two minutes before, without taking focus.</p>
+          <ul class="ticks rise" style="--d:.1s">
+            <li>Who has accepted, at a glance</li>
+            <li>The agenda pulled from the invitation’s notes</li>
+            <li>A time-sensitive reminder a minute before, with Join on it</li>
+          </ul>
+        </div>
+        <div class="split-stage">
+          <figure class="shot-stage rise" style="--d:.08s">
+            <img src="shots/prep-card.webp?v=d54884dc61" width="719" height="949" loading="lazy" alt="The pre-meeting card: Launch standup in four minutes, a Join Google Meet button, seven people with their responses, a three-item agenda and the next two meetings." />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="conflicts" class="sec sec-split reveal" data-stage="conflicts" aria-labelledby="conf-title">
+      <div class="glow" aria-hidden="true"></div>
+      <div class="container split">
+        <div class="split-copy">
+          <p class="spec rise"><span>04</span>Conflicts</p>
+          <h2 id="conf-title" class="rise">Double-booked, side by side</h2>
+          <p class="rise" style="--d:.06s">Overlaps among the meetings you have accepted are outlined in every view. The chip opens both meetings next to each other, with Decline on each.</p>
+        </div>
+        <div class="split-stage">
+          <div class="cf rise" style="--d:.08s">
+            <div class="cf-track" aria-hidden="true">
+              <span class="cf-h" style="--at:0">13:00</span><span class="cf-h" style="--at:.5">14:00</span><span class="cf-h" style="--at:1">15:00</span>
+              <span class="cf-bar a"></span><span class="cf-bar b"></span>
+              <span class="cf-pill">double-booked</span>
+            </div>
+            <div class="cf-cards">
+              <article class="cf-card" data-side="a">
+                <span class="cf-cal"><i style="background:#5AAEFF"></i>Work · Google</span>
+                <b>Roadmap review</b>
+                <span class="cf-time">13:30–14:30</span>
+                <span class="cf-who">Organised by Priya · 9 going</span>
+                <button type="button" class="cf-decline">Decline</button>
+              </article>
+              <article class="cf-card" data-side="b">
+                <span class="cf-cal"><i style="background:#3FD485"></i>Client · Microsoft</span>
+                <b>Quarterly check-in</b>
+                <span class="cf-time">14:00–15:00</span>
+                <span class="cf-who">Organised by Tom · 4 going</span>
+                <button type="button" class="cf-decline">Decline</button>
+              </article>
+            </div>
+          </div>
+          <p class="stage-status cf-status rise" style="--d:.14s" aria-live="polite">Decline one and the clash is gone.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="plan" class="sec plan reveal" aria-labelledby="plan-title">
+      <div class="container">
+        <div class="gallery-head">
+          <p class="section-label rise">Planning, up close</p>
+          <h2 id="plan-title" class="rise" style="--d:.06s">Make room without leaving the keyboard.</h2>
+          <p class="rise" style="--d:.1s">Add a meeting in a sentence, hand out your free time, and take back any answer.</p>
+        </div>
+        <div class="gallery-grid">
+          <figure id="quickadd" class="gcard rise" style="--d:.06s">
+            <div class="gpad wide"><img src="shots/quick-add.webp?v=ac9331b4f5" width="541" height="96" loading="lazy" alt="Quick add with “Call with Mara Fri 15:00-15:45 zoom.us/j/123” typed in, previewed as Friday 16 October, 15:00 to 15:45, on zoom.us, in the Work calendar." /></div>
+            <figcaption><span class="spec"><span>05</span>Quick add</span><b>Type it the way you’d say it.</b><span class="gc-p">“Lunch with Ana tomorrow 1pm” is previewed as you type and added with Return. Repeats daily, on weekdays or weekly, with Undo for ten seconds. <span class="combo"><kbd>⌘</kbd><kbd>N</kbd></span> on the Mac, + on iPhone.</span></figcaption>
+          </figure>
+          <figure id="availability" class="gcard rise" style="--d:.1s">
+            <div class="gpad"><img src="shots/week-availability.webp?v=8d99ff04da" width="1100" height="720" loading="lazy" alt="The week view with three free slots selected and a bar to pick the zone, Suggest more, or Copy them." /></div>
+            <figcaption><span class="spec"><span>06</span>Share availability</span><b>Your free time, ready to paste.</b><span class="gc-p">Drag across empty time in day or week, then copy the slots as text in any zone. Suggest picks the next free half hours for you. <span class="combo"><kbd>⌘</kbd><kbd>⇧</kbd><kbd>A</kbd></span></span></figcaption>
+          </figure>
+          <figure class="gcard rise" style="--d:.06s">
+            <div class="gpad"><img src="shots/conflict-pair.webp?v=effc03b849" width="1064" height="720" loading="lazy" alt="The day view with two overlapping meetings and the double-booked popover showing both, each with its own Decline button." /></div>
+            <figcaption><span class="spec"><span>04</span>Conflicts</span><b>The real thing, in the day view.</b><span class="gc-p">Click the double-booked chip and both meetings open together. <span class="combo"><kbd>←</kbd> <kbd>→</kbd></span> pick one, <kbd>D</kbd> declines it.</span></figcaption>
+          </figure>
+          <figure class="gcard rise" style="--d:.1s">
+            <div class="gpad undo-pad" aria-hidden="true">
+              <div class="undo-card">
+                <div class="undo-row">
+                  <span class="undo-dot"></span>
+                  <span class="undo-tx"><b>Design review</b><span>Today 14:00–15:00 · Maya Chen</span></span>
+                  <span class="undo-chip">Accepted</span>
+                </div>
+                <div class="undo-bar"><span>Sending in 7 s</span><span class="undo-track"><i></i></span><span class="undo-btn">Undo</span></div>
+              </div>
+            </div>
+            <figcaption><span class="spec"><span>01</span>Undo</span><b>Every reply can be taken back.</b><span class="gc-p">Replies wait ten seconds before they leave, so even the first answer to an invitation can be undone. Quitting sends them at once.</span></figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section id="zones" class="sec reveal" data-stage="zones" aria-labelledby="zones-title">
+      <div class="glow" aria-hidden="true"></div>
+      <div class="container">
+        <div class="zr rise" tabindex="0" role="slider" aria-label="Time across zones" aria-valuemin="8" aria-valuemax="18" aria-valuenow="15" aria-valuetext="15:00 London">
+          <div class="zr-head">
+            <span>London</span><span>New York <em>−5h</em></span><span>Bengaluru <em>+4:30</em></span><span class="zr-day">Tue 27 Oct</span>
+          </div>
+          <div class="zr-body"></div>
+        </div>
+        <div class="sec-head center">
+          <p class="spec rise"><span>07</span>Time zones</p>
+          <h2 id="zones-title" class="rise" style="--d:.08s">Their time, on the rail</h2>
+          <p class="rise" style="--d:.14s">Day and week views carry extra zones down the hour rail, half-hour zones and daylight-saving days included. The inspector shows a meeting’s start in each of them.</p>
+          <p class="hint rise" style="--d:.2s">Move across the day, or focus it and use <span class="combo"><kbd>↑</kbd> <kbd>↓</kbd></span>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="agents" class="sec sec-split reveal" aria-labelledby="agents-title">
+      <div class="glow" aria-hidden="true"></div>
+      <div class="container split">
+        <div class="split-copy">
+          <p class="spec rise"><span>08</span>Agents and Shortcuts</p>
+          <h2 id="agents-title" class="rise">Ready for your agents</h2>
+          <p class="rise" style="--d:.06s">An MCP server runs inside the Mac app, on your machine only, behind a token in your Keychain. A <code>cadence</code> command line speaks to it, and Shortcuts, Siri and Focus plug in too.</p>
+          <ul class="ticks rise" style="--d:.1s">
+            <li>Ten tools: next meeting, agenda, inbox, conflicts, free slots, the brief and more</li>
+            <li>Reads are always on. Replies from agents stay off until you allow them</li>
+            <li>Run a Shortcut when a meeting starts or ends</li>
+            <li>A Focus filter switches the calendar set and can hide declined events</li>
+            <li>“Hey Siri, join my next meeting in Cadence”</li>
+          </ul>
+        </div>
+        <div class="split-stage">
+          <div class="code-stack rise" style="--d:.08s">
+            <figure class="code">
+              <figcaption><span>Settings → Agents</span><button type="button" class="copy" data-copy="code-mcp">Copy</button></figcaption>
+              <pre id="code-mcp"><code><span class="pr">$ </span>claude mcp add --transport http cadence \
+    http://127.0.0.1:&lt;port&gt;/mcp \
+    --header "Authorization: Bearer &lt;token&gt;"</code></pre>
+            </figure>
+            <figure class="code">
+              <figcaption><span>Terminal</span><button type="button" class="copy" data-copy="code-cli">Copy</button></figcaption>
+              <pre id="code-cli"><code><span class="pr">$ </span>cadence agenda today
+<span class="out">Agenda for Tue 27 Oct · 3 events
+Design review · Tue 27 Oct 11:00–12:00 · in 20m · Work · 4 of 5 going
+Roadmap sync · Tue 27 Oct 11:30–12:15 · in 50m · Work · needs your reply
+1:1 with Mira · Tue 27 Oct 14:00–14:45 · in 3h 20m · Work · 2 of 2 going</span>
+<span class="pr">$ </span>cadence reply next accept
+<span class="pr">$ </span>cadence inbox --json | jq length
+<span class="out">2</span></code></pre>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="widgets" class="sec reveal" aria-labelledby="widgets-title">
+      <div class="glow" aria-hidden="true"></div>
+      <div class="container">
+        <div class="wg rise">
+          <div class="wg-phone" aria-hidden="true">
+            <div class="island"><span class="isl-ico"></span><span class="isl-t">Standup</span><span class="isl-c">12:48</span><span class="isl-j">Join</span></div>
+            <p class="lock-time">9:31</p>
+            <div class="note"><img src="icon-256.png" alt="" width="20" height="20" /><div><b>Today in Cadence</b><span>3 meetings, 9:30 to 15:00. 2 invitations need a reply. 1 double-booking.</span></div></div>
+            <div class="la"><div class="live-top"><img src="icon-256.png" alt="" width="22" height="22" /><b>Standup</b><span class="live-left">13m left</span></div><div class="live-row"><span class="live-track"><i></i></span><span class="live-join">Join</span></div></div>
+          </div>
+          <div class="wg-grid" aria-hidden="true">
+            <div class="w w-s"><span class="w-k">Next up</span><b>Standup</b><span class="w-t">in 12m</span><span class="w-m">Google Meet</span></div>
+            <div class="w w-m2">
+              <span class="w-k">Today</span>
+              <ul>
+                <li><i></i><span>09:30</span>Standup</li>
+                <li><i style="background:#3FD485"></i><span>11:00</span>Sync with Bengaluru</li>
+                <li class="pend"><i></i><span>14:00</span>Design review</li>
+              </ul>
+            </div>
+            <div class="w w-acc"><span class="acc-ring"><b>2</b></span><span class="w-k">Inbox</span></div>
+          </div>
+        </div>
+        <div class="sec-head center">
+          <p class="spec rise"><span>09</span>Widgets</p>
+          <h2 id="widgets-title" class="rise" style="--d:.08s">On the desktop and the Lock Screen</h2>
+          <p class="rise" style="--d:.14s">Next up, Today and Inbox widgets on Mac and iPhone, a Live Activity with Join in the Dynamic Island, and a daily brief at the hour you choose.</p>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <section id="life" class="why life">
+        <p class="section-label">Beyond the meeting</p>
+        <h2>The rest of your day is on it too.</h2>
+        <p class="lede">Dentist at ten, a birthday on Friday, a trip in nine days. Cadence keeps them where you already look.</p>
+        <div class="why-grid">
+          <div class="why-card">
+            <span class="fact-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="m8.5 12.3 2.4 2.4 4.6-4.9"/></svg></span>
+            <h3>Reminders</h3>
+            <p>Apple Reminders sit beside your events with their due times. Tick one off in the agenda, day or week.</p>
+          </div>
+          <div class="why-card">
+            <span class="fact-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 18a4 4 0 0 1-.6-8A5.5 5.5 0 0 1 17 8.6 3.7 3.7 0 0 1 17 18z"/></svg></span>
+            <h3>Weather and birthdays</h3>
+            <p>A forecast on each day, and birthdays from your contacts, so a rainy Saturday and a friend’s party show up before you plan around them.</p>
+          </div>
+          <div class="why-card">
+            <span class="fact-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="13" r="8"/><path d="M12 8.5V13l3 2M9.5 2.5h5"/></svg></span>
+            <h3>Countdowns</h3>
+            <p>Pin a trip, a launch or a birthday and see the days left in the agenda, the menu bar and a widget.</p>
+          </div>
+          <div class="why-card">
+            <span class="fact-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20l1-4L16.5 4.5a2.1 2.1 0 0 1 3 3L8 19z"/><path d="M14.5 6.5l3 3"/></svg></span>
+            <h3>Editing</h3>
+            <p>Drag an event to a new time, or open it and change the title, repeat, alerts, people and calendar.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="accounts" class="why accounts">
+        <p class="section-label">Works with your accounts</p>
+        <h2>The calendars you already have.</h2>
+        <p class="lede">Cadence reads whatever is on your Mac or iPhone, and answers invitations through the provider that sent them.</p>
+        <ul class="prov" aria-label="Supported accounts">
+          <li>Google</li><li>Microsoft 365</li><li>iCloud</li><li>Yahoo</li><li>Fastmail</li><li>Zoho</li><li>GMX</li><li>Posteo</li><li>mailbox.org</li><li>Nextcloud</li><li>Other CalDAV</li><li>On-premises Exchange</li>
+        </ul>
+      </section>
+    </div>
+
+    <section id="privacy" class="sec sec-split reveal" data-stage="permission" aria-labelledby="perm-title">
+      <div class="glow" aria-hidden="true"></div>
+      <div class="container split">
+        <div class="split-copy">
+          <p class="eyebrow rise" data-granted="You’re in">One permission</p>
+          <h2 id="perm-title" class="rise" style="--d:.04s">No Coursion server.</h2>
+          <p class="rise" style="--d:.06s">Tokens stay in your Keychain. Cadence reads the calendars already on your device, and a reply goes straight from it to the provider that sent the invitation. There is no Cadence account and nothing in between.</p>
+          <p class="perm-status rise" style="--d:.1s" data-granted="Calendars granted"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="8.5" stroke-dasharray="3 3.4"/></svg><span>Not granted yet</span></p>
+        </div>
+        <div class="split-stage">
+          <div class="perm rise" style="--d:.08s">
+            <div class="perm-bar"><i></i><i></i><i></i><b>Calendars</b></div>
+            <p class="perm-lede">Allow the apps below to access your calendars.</p>
+            <div class="perm-list">
+              <div class="perm-row" aria-hidden="true"><span class="perm-ghost-icon"></span><span class="perm-ghost-name"></span><span class="sw on"><i></i></span></div>
+              <div class="perm-row mine">
+                <img class="perm-icon" src="icon-256.png" alt="" width="40" height="40" loading="lazy" />
+                <span class="perm-title">Cadence<svg class="perm-ok" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10" fill="currentColor"/><path d="m7.5 12.3 3 3 6-6.3" fill="none" stroke="#0b1a10" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+                <button type="button" class="sw" role="switch" aria-checked="false" aria-label="Allow Cadence to access your calendars"><i></i></button>
+                <span class="burst" aria-hidden="true"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="container">
+      <section id="why" class="why">
+        <p class="section-label">Why Cadence</p>
+        <h2>Native. Direct. Free.</h2>
+        <p class="lede">A calendar for the meetings other people put on it and the plans you make yourself, that keeps your accounts to itself.</p>
+        <div class="why-grid">
+          <div class="why-card">
+            <span class="fact-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M13 2L4 14h7l-1 8 9-12h-7z"/></svg></span>
+            <h3>Native on both</h3>
+            <p>SwiftUI on macOS 26 and iOS 26, sandboxed, from the App Store. Settings follow you through your own iCloud.</p>
+          </div>
+          <div class="why-card">
+            <span class="fact-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12h12M12 6l6 6-6 6"/><path d="M20 4v16"/></svg></span>
+            <h3>Your own accounts</h3>
+            <p>Replies go from your device to the provider that sent the invitation. No Coursion server, no proxy.</p>
+          </div>
+          <div class="why-card">
+            <span class="fact-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="11" width="16" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg></span>
+            <h3>Keychain only</h3>
+            <p>Sign-in tokens and app-specific passwords live in your Keychain. No analytics. <a href="privacy.html">Read the privacy policy</a>.</p>
+          </div>
+          <div class="why-card">
+            <span class="fact-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg></span>
+            <h3>Free, all of it</h3>
+            <p>Replies, reminders, weather, join, conflicts, widgets and agents on Mac and iPhone. No account and no subscription.</p>
+          </div>
+        </div>
+      </section>
+
+      <section id="download" class="cta-band">
+        <h2>Keep work and life in time.</h2>
+        <p class="lede">Cadence is free on Mac and iPhone, and arrives on the App Store soon.</p>
+        <div class="cta-row">
+          <a class="btn primary store" href="#download" aria-disabled="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4.5" width="18" height="12" rx="2"/><path d="M8.5 20h7M12 16.5V20"/></svg>Mac App Store<span class="soon">Coming soon</span></a>
+          <a class="btn outline store" href="#download" aria-disabled="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg>App Store<span class="soon">Coming soon</span></a>
+        </div>
+        <p class="req-note">macOS 26 and iOS 26 · Sandboxed, from the App Store</p>
+      </section>
+    </div>
+  </main>
+
+  <div class="container">
+    <footer>
+      <div class="links">
+        <a href="#download">Download</a>
+        <a href="support.html">Support</a>
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+        <a href="mailto:support@coursion.studio">Contact</a>
+        <a href="https://x.com/kuraydev" target="_blank" rel="noopener">@kuraydev</a>
+      </div>
+      <div>© 2026 Coursion Studio · Made in SwiftUI</div>
+    </footer>
+  </div>
+</body>
+</html>
